@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+        }
+        .container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+        }
+        .orbit {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .image {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            animation: fall 5s linear infinite;
+        }
+
+        .image:nth-child(1) { left: 10%; animation-duration: 6s; }
+        .image:nth-child(2) { left: 20%; animation-duration: 7s; }
+        .image:nth-child(3) { left: 30%; animation-duration: 6.5s; }
+        .image:nth-child(4) { left: 40%; animation-duration: 8s; }
+        .image:nth-child(5) { left: 50%; animation-duration: 7.5s; }
+        .image:nth-child(6) { left: 60%; animation-duration: 6s; }
+        .image:nth-child(7) { left: 70%; animation-duration: 6.8s; }
+        .image:nth-child(8) { left: 80%; animation-duration: 7.2s; }
+        .image:nth-child(9) { left: 90%; animation-duration: 5s; }
+        .image:nth-child(10) { left: 20%; animation-duration: 8s; }
+        .image:nth-child(11) { left: 30%; animation-duration: 6.2s; }
+
+        @keyframes fall {
+            0% { top: -10%; opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background: white;
+            color: #ff0040;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background: #ff104c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">Te amo ❤️</div>
+        <div class="orbit">
+            <!-- Se agregarán las imágenes Yimy1.jpg hasta Yimy11.jpg -->
+            <img class="image" src="img/yimy/Yimy1.jpg" alt="Amor 1">
+            <img class="image" src="img/yimy/Yimy2.jpg" alt="Amor 2">
+            <img class="image" src="img/yimy/Yimy3.jpg" alt="Amor 3">
+            <img class="image" src="img/yimy/Yimy4.jpg" alt="Amor 4">
+            <img class="image" src="img/yimy/Yimy5.jpg" alt="Amor 5">
+            <img class="image" src="img/yimy/Yimy6.jpg" alt="Amor 6">
+            <img class="image" src="img/yimy/Yimy7.jpg" alt="Amor 7">
+            <img class="image" src="img/yimy/Yimy8.jpg" alt="Amor 8">
+            <img class="image" src="img/yimy/Yimy9.jpg" alt="Amor 9">
+            <img class="image" src="img/yimy/Yimy10.jpg" alt="Amor 10">
+            <img class="image" src="img/yimy/Yimy11.jpg" alt="Amor 11">
+            <img class="image" src="img/yimy/cora.png" alt="Amor 11">
+        </div>
+    </div>
+    <button class="back-button" onclick="location.href='index.html'">Regresar</button>
+</body>
+</html>
