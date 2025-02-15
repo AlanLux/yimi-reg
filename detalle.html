@@ -31,9 +31,13 @@
             left: 50%;
             transform: translateX(-50%);
             color: white;
-            font-size: 3em;
+            font-size: 2.5em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
             z-index: 2;
+            max-height: 70%; /* Limitar el alto del contenedor */
+            overflow-y: scroll; /* Añadir barra de desplazamiento vertical */
+            padding-right: 10px; /* Espacio para la barra de desplazamiento */
+            line-height: 1.5em; /* Mejora la legibilidad del texto */
         }
         .orbit {
             position: absolute;
@@ -99,8 +103,9 @@
         /* Media Query para dispositivos móviles */
         @media screen and (max-width: 768px) {
             .message {
-                font-size: 2.5em;
+                font-size: 2em;
                 top: 5%;
+                max-height: 50%; /* Limitar el alto en pantallas más pequeñas */
             }
 
             .orbit {
@@ -121,8 +126,9 @@
 
         @media screen and (max-width: 480px) {
             .message {
-                font-size: 2em;
+                font-size: 1.5em;
                 top: 3%;
+                max-height: 40%; /* Limitar más el alto en dispositivos más pequeños */
             }
 
             .orbit {
@@ -143,7 +149,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="message">Cada día que pasa, mi corazón te extraña más, pero también se llena de gratitud por tenerte en mi vida. La distancia es solo un espacio entre nosotros, porque mi amor por ti no conoce fronteras.Quiero que cada mañana recuerdes lo increíble que eres y lo mucho que significas para mí. Eres mi alegría, mi paz y mi inspiración. Aunque no pueda abrazarte ahora, mi amor te envuelve siempre.No importa cuántos kilómetros nos separen, cada latido mío es un susurro de amor para ti. Cada noche, antes de dormir, imagina que te tomo de la mano y te susurro al oído cuánto te amo.Pronto llegará el día en que podamos acortar esta distancia y estar juntos, pero mientras tanto, quiero que recuerdes que mi amor por ti es eterno, inquebrantable y sincero.Te amo más de lo que las palabras pueden decir.Te amo ❤️</div>
+        <div class="message">
+            Cada día que pasa, mi corazón te extraña más, pero también se llena de gratitud por tenerte en mi vida. La distancia es solo un espacio entre nosotros, porque mi amor por ti no conoce fronteras. Quiero que cada mañana recuerdes lo increíble que eres y lo mucho que significas para mí. Eres mi alegría, mi paz y mi inspiración. Aunque no pueda abrazarte ahora, mi amor te envuelve siempre. No importa cuántos kilómetros nos separen, cada latido mío es un susurro de amor para ti. Cada noche, antes de dormir, imagina que te tomo de la mano y te susurro al oído cuánto te amo. Pronto llegará el día en que podamos acortar esta distancia y estar juntos, pero mientras tanto, quiero que recuerdes que mi amor por ti es eterno, inquebrantable y sincero. Te amo más de lo que las palabras pueden decir. Te amo ❤️
+        </div>
         <div class="orbit">
             <!-- Las imágenes de la "lluvia de amor" -->
             <img class="image" src="img/yimy/Yimy1.jpg" alt="Amor 1">
