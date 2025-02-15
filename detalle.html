@@ -38,6 +38,8 @@
             overflow-y: scroll; /* Añadir barra de desplazamiento vertical */
             padding-right: 10px; /* Espacio para la barra de desplazamiento */
             line-height: 1.5em; /* Mejora la legibilidad del texto */
+            padding-left: 10px;
+            padding-right: 10px;
         }
         .orbit {
             position: absolute;
@@ -105,7 +107,7 @@
             .message {
                 font-size: 2em;
                 top: 5%;
-                max-height: 50%; /* Limitar el alto en pantallas más pequeñas */
+                max-height: 80%; /* Limitar un poco menos el alto */
             }
 
             .orbit {
@@ -118,8 +120,8 @@
             }
 
             .back-button {
-                font-size: 1em;
-                padding: 8px 16px;
+                font-size: 1.2em;
+                padding: 12px 24px;
                 bottom: 10px;
             }
         }
@@ -128,7 +130,7 @@
             .message {
                 font-size: 1.5em;
                 top: 3%;
-                max-height: 40%; /* Limitar más el alto en dispositivos más pequeños */
+                max-height: 50%; /* Limitar aún más el alto para pantallas más pequeñas */
             }
 
             .orbit {
@@ -141,8 +143,9 @@
             }
 
             .back-button {
-                font-size: 0.8em;
-                padding: 8px 16px;
+                font-size: 1.1em;
+                padding: 10px 20px;
+                bottom: 5px;
             }
         }
     </style>
