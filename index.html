@@ -29,11 +29,13 @@
             position: relative;
             width: 200px;
             height: 200px;
+            overflow: hidden;
+            border-radius: 15px;
         }
         .gallery img {
             width: 100%;
             height: 100%;
-            border-radius: 15px;
+            object-fit: cover;
             transition: transform 0.5s ease, box-shadow 0.5s ease;
         }
         .gallery img:hover {
@@ -42,13 +44,17 @@
         }
         .image-text {
             position: absolute;
-            bottom: -19px; /* Ajusta la posición del texto por debajo de la imagen */
+            bottom: 0; /* Asegura que el texto esté al fondo de la imagen */
             left: 50%;
             transform: translateX(-50%);
-            color: black;
+            color: white;
             font-size: 1.2em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            margin-top: 10px; /* Asegura que el texto no esté demasiado cerca de la imagen */
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
         }
         h1 {
             position: absolute;
@@ -70,7 +76,6 @@
             }
             .image-text {
                 font-size: 1em; /* Reduce el tamaño del texto */
-                bottom: -30px; /* Ajusta la posición del texto para evitar solapamiento */
             }
             h1 {
                 font-size: 2em;
@@ -88,9 +93,7 @@
                 height: 120px;
             }
             .image-text {
-                
                 font-size: 0.9em;
-                bottom: -35px; /* Da más espacio entre el texto y la imagen */
             }
             h1 {
                 font-size: 1.5em;
